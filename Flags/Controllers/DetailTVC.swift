@@ -37,9 +37,9 @@ class DetailTVC: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell!
         if indexPath.row == 7 || indexPath.row == 8 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
-        } else {
             cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
+        } else {
+            cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
         }
         
         cell.imageView?.image = nil
