@@ -32,19 +32,26 @@ struct StateData: Codable {
     // so urls converted to images only once
     lazy var flag: UIImage? = {
         if let data = try? Data(contentsOf: URL(string: state_flag_url)!) {
-            return UIImage(data: data)!
+            let size = CGSize(width: 75, height: 50)
+            let image = UIImage(data: data)!
+            return image.scaleImage(size)
         }
         return nil
     }()
     lazy var seal: UIImage? = {
         if let data = try? Data(contentsOf: URL(string: state_seal_url)!) {
-            return UIImage(data: data)!
+            let size = CGSize(width: 50, height: 50)
+            let image = UIImage(data: data)!
+            
+            return image.scaleImage(size)
         }
         return nil
     }()
     lazy var map: UIImage? = {
         if let data = try? Data(contentsOf: URL(string: map_image_url)!) {
-            return UIImage(data: data)!
+            let size = CGSize(width: 75, height: 50)
+            let image = UIImage(data: data)!
+            return image.scaleImage(size)
         }
         return nil
     }()
@@ -56,10 +63,13 @@ struct StateData: Codable {
     }()
     lazy var skyline: UIImage? = {
         if let data = try? Data(contentsOf: URL(string: skyline_background_url)!) {
-            return UIImage(data: data)!
+            let size = CGSize(width: 75, height: 50)
+            let image = UIImage(data: data)!
+            return image.scaleImage(size)
         }
         return nil
     }()
+    
 }
 
 // this reads and decodes a JSON file from the bundle
@@ -105,4 +115,34 @@ extension UIImageView {
             }
         }
     }
+}
+
+extension UIImage {
+    func scaleImage(_ targetSize: CGSize) -> UIImage {
+        // Determine the scale factor that preserves aspect ratio
+        let widthRatio = targetSize.width / size.width
+        let heightRatio = targetSize.height / size.height
+        
+        let scaleFactor = min(widthRatio, heightRatio)
+        
+        // Compute the new image size that preserves aspect ratio
+        let scaledImageSize = CGSize(
+            width: size.width * scaleFactor,
+            height: size.height * scaleFactor
+        )
+
+        // Draw and return the resized UIImage
+        let renderer = UIGraphicsImageRenderer(
+            size: scaledImageSize
+        )
+
+        let scaledImage = renderer.image { _ in
+            self.draw(in: CGRect(
+                origin: .zero,
+                size: scaledImageSize
+            ))
+        }
+        return scaledImage
+    }
+    
 }

@@ -35,16 +35,13 @@ class DetailTVC: UITableViewController {
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell:UITableViewCell!
-        if indexPath.row == 7 || indexPath.row == 8 {
-            cell = tableView.dequeueReusableCell(withIdentifier: "Cell1", for: indexPath)
-        } else {
-            cell = tableView.dequeueReusableCell(withIdentifier: "Cell2", for: indexPath)
-        }
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         cell.imageView?.image = nil
+        cell.textLabel?.numberOfLines = 0
+        cell.textLabel?.lineBreakMode = NSLineBreakMode.byWordWrapping
         cell.textLabel!.text = ""
         cell.textLabel?.font = UIFont(name:"ArialRoundedMTBold", size: 20.0)
+        cell.textLabel?.textColor = UIColor.yellow
         switch indexPath.row {
         case 0:
             cell.imageView?.image = state?.flag
