@@ -19,6 +19,7 @@
 		3DA7393D2644889F00C5F893 /* StateTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7393C2644889F00C5F893 /* StateTVCell.swift */; };
 		3DA7393F2644A27500C5F893 /* DetailTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA7393E2644A27500C5F893 /* DetailTVC.swift */; };
 		3DF10CD32645AC8D00787F2F /* ForkbeardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF10CD22645AC8D00787F2F /* ForkbeardTVC.swift */; };
+		3DF10CD72645D83400787F2F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3DF10CD62645D83400787F2F /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		3DA7393C2644889F00C5F893 /* StateTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateTVCell.swift; sourceTree = "<group>"; };
 		3DA7393E2644A27500C5F893 /* DetailTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTVC.swift; sourceTree = "<group>"; };
 		3DF10CD22645AC8D00787F2F /* ForkbeardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkbeardTVC.swift; sourceTree = "<group>"; };
+		3DF10CD62645D83400787F2F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 				3DA7391D264454E600C5F893 /* Assets.xcassets */,
 				3DA73922264454E600C5F893 /* Info.plist */,
 				3DA7393726447EDF00C5F893 /* states.json */,
+				3DF10CD62645D83400787F2F /* README.md */,
 			);
 			path = Flags;
 			sourceTree = "<group>";
@@ -160,6 +163,7 @@
 			files = (
 				3DA73921264454E600C5F893 /* LaunchScreen.storyboard in Resources */,
 				3DA7391E264454E600C5F893 /* Assets.xcassets in Resources */,
+				3DF10CD72645D83400787F2F /* README.md in Resources */,
 				3DA7391C264454E400C5F893 /* Main.storyboard in Resources */,
 				3DA7393826447EE000C5F893 /* states.json in Resources */,
 			);
