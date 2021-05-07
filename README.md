@@ -1,8 +1,7 @@
 # Flags
-Has the flags of the states, Assignment 2 of swift class.
+Has the flags of the states, Assignment 2 of swift class at DeAnza College.
 
-
-This struct does most of the work.  It's main function is to crate a struct
+The stateData struct  does most of the work.  It's main function is to crate a struct
 which loads all of its data from a JSON file loaded in the bundle (see the
 "States.json" fle in the navigator).  This file was created by MIT in a civics
 project for here: https://github.com/CivilServiceUSA/us-states.  For the
