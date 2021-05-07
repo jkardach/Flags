@@ -1,5 +1,7 @@
 
-This struct does most of the work.  It's main function is to crate a struct
+
+#Flags
+The stateData struct does most of the work.  It's main function is to crate a struct
 which loads all of its data from a JSON file loaded in the bundle (see the
 "States.json" fle in the navigator).  This file was created by MIT in a civics
 project for here: https://github.com/CivilServiceUSA/us-states.  For the
