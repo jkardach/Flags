@@ -30,7 +30,7 @@ class DetailTVC: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 9
+        return 10
     }
 
 
@@ -51,7 +51,7 @@ class DetailTVC: UITableViewController {
             cell.textLabel!.text = "- The Seal of " + state!.state
         case 2:
             cell.imageView?.image = state?.map
-            cell.textLabel!.text = "- Location of " + state!.state
+            cell.textLabel!.text = " " + state!.state + ": " + String(state!.area) + "² Miles"
         case 3:
             cell.imageView?.image = state?.skyline
             cell.textLabel!.text = "Capital: " + state!.capital_city

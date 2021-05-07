@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:">
+      location = "self:/Users/jimkardach/Desktop/CIS55-Swift-MW600/Flags/StateListsApp.xcodeproj">
    </FileRef>
 </Workspace>

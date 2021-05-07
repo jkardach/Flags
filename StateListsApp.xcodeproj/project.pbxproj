@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		3D3CE7A82644B782004812E0 /* WebVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebVC.swift; sourceTree = "<group>"; };
-		3DA73911264454E400C5F893 /* Flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flags.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DA73911264454E400C5F893 /* StateListsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StateListsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA73914264454E400C5F893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DA73916264454E400C5F893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3DA7391B264454E400C5F893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,7 +60,7 @@
 		3DA73912264454E400C5F893 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DA73911264454E400C5F893 /* Flags.app */,
+				3DA73911264454E400C5F893 /* StateListsApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -104,9 +104,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3DA73910264454E400C5F893 /* Flags */ = {
+		3DA73910264454E400C5F893 /* StateListsApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3DA73925264454E600C5F893 /* Build configuration list for PBXNativeTarget "Flags" */;
+			buildConfigurationList = 3DA73925264454E600C5F893 /* Build configuration list for PBXNativeTarget "StateListsApp" */;
 			buildPhases = (
 				3DA7390D264454E400C5F893 /* Sources */,
 				3DA7390E264454E400C5F893 /* Frameworks */,
@@ -116,9 +116,9 @@
 			);
 			dependencies = (
 			);
-			name = Flags;
+			name = StateListsApp;
 			productName = Flags;
-			productReference = 3DA73911264454E400C5F893 /* Flags.app */;
+			productReference = 3DA73911264454E400C5F893 /* StateListsApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 3DA7390C264454E400C5F893 /* Build configuration list for PBXProject "Flags" */;
+			buildConfigurationList = 3DA7390C264454E400C5F893 /* Build configuration list for PBXProject "StateListsApp" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -148,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3DA73910264454E400C5F893 /* Flags */,
+				3DA73910264454E400C5F893 /* StateListsApp */,
 			);
 		};
 /* End PBXProject section */
@@ -362,7 +362,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3DA7390C264454E400C5F893 /* Build configuration list for PBXProject "Flags" */ = {
+		3DA7390C264454E400C5F893 /* Build configuration list for PBXProject "StateListsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DA73923264454E600C5F893 /* Debug */,
@@ -371,7 +371,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3DA73925264454E600C5F893 /* Build configuration list for PBXNativeTarget "Flags" */ = {
+		3DA73925264454E600C5F893 /* Build configuration list for PBXNativeTarget "StateListsApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3DA73926264454E600C5F893 /* Debug */,

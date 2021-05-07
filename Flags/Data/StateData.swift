@@ -10,8 +10,8 @@
  which loads all of its data from a JSON file loaded in the bundle (see the
  "States.json" fle in the navigator).  This file was created by MIT in a civics
  project for here: https://github.com/CivilServiceUSA/us-states.  For the
- the assigmnet we had to list the largest city in the state also, which I
- updated the JSON and added a field for each state for "largest_city".  As it
+ the assigmnet we had to list the largest city in the state and the area, which
+ of the state, which I manually updated the JSON file to include both.  As it
  had all of this wonderful data, I decided to do all 50 states, but some of
  the data was stale.  url's to some of the state goverment and constitutions
  was bad, so I manually updated these also.
@@ -47,7 +47,7 @@
  background image:
    (image of flag) Flag
    (image of seal) Seal
-   (image showing state location) State shape
+   (image showing state location) State: xxxx2 miles
    (skyline of capital) and capital city name
    largest cities name
    population of the state (and population rank of 50 states)
@@ -83,6 +83,7 @@ struct StateData: Codable {
     let largest_city: String
     let population: Int
     let population_rank: Int
+    let area: Int
     let constitution_url: String
     let state_flag_url: String
     let state_seal_url: String
