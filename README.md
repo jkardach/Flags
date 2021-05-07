@@ -1,15 +1,15 @@
 # Flags
 Has the flags of the states, Assignment 2 of swift class at DeAnza College.
 
-The stateData struct  does most of the work.  It's main function is to crate a struct
-which loads all of its data from a JSON file loaded in the bundle (see the
-"States.json" fle in the navigator).  This file was created by MIT in a civics
-project for here: https://github.com/CivilServiceUSA/us-states.  For the
-the assigmnet we had to list the largest city in the state also, which I
-updated the JSON and added a field for each state for "largest_city".  As it
-had all of this wonderful data, I decided to do all 50 states, but some of
-the data was stale.  url's to some of the state goverment and constitutions
-was bad, so I manually updated these also.
+ The stateData struct does most of the work.  It's main function is to crate a struct
+ which loads all of its data from a JSON file loaded in the bundle (see the
+ "States.json" fle in the navigator).  This file was created by MIT in a civics
+ project for here: https://github.com/CivilServiceUSA/us-states.  For the
+ the assigmnet we had to list the largest city in the state and the area, which
+ of the state, which I manually updated the JSON file to include both.  As it
+ had all of this wonderful data, I decided to do all 50 states, but some of
+ the data was stale.  url's to some of the state goverment and constitutions
+ was bad, so I manually updated these also.
 
 A couple of interesting tricks here.  All of the images are urls, so they are
 downloaded.  Some of these images are very large.  So I've defined the image
